@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Author : Daniel Urbina
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Daniel Urbina} \\ \vspace{1pt}
+    \small 201-519-3072 $|$ \href{mailto:x@x.com}{\underline{du35@njit.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/danielburbina}} $|$
+    \href{https://github.com/...}{\underline{github.com/danielxurbina}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New Jersey Institute of Technology}{Newark, NJ}
+      {Bachelor of Science in Computer Science}{Sept. 2022 -- May 2025}
+    \resumeSubheading
+      {Hudson County Community College}{Jersey City, NJ}
+      {Associate's of Science in Computer Science}{Sept. 2019 -- Aug. 2022}
+    \resumeSubheading
+        {Flatiron School}{New York, NY}
+        {Software Engineering Immersive: Full-stack Development}{Jan. 2020 - Jun 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sales Associate}{May. 2019 -- Feb 2020}
+      {Yogibo}{Paramus, NJ}
+      \resumeItemListStart
+        \resumeItem{Joined Yogibo mid-sale cycle with no prior experience and quickly adapted to exceed sales goals, resulting in ranking as a top 10 company-wide salesperson}
+        \resumeItem{Boosted sales by engaging customers, up-selling through suggestive techniques, and demonstrating expert product knowledge}
+        \resumeItem{Surpassed monthly revenue goals for seven months in a row, earning the title of Best Sales Associate in 2019}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{OnTopic} $|$ \emph{JavaScript, React, Node.js, Express.js, MongoDB}}{Jan 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application that allows users to access real-time news updates, engage in discussions, and contribute their perspectives.}
+            \resumeItem{The backend was built with Node.js and Express.js, the frontend with React, and MongoDB as the database solution for efficient data store and retrieval.}
+            \resumeItem{Integrated the HackerNews API to dynamically fetch and present curated news content.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{InstaPlay} $|$ \emph{JavaScript, React, Ruby on Rails, Active Storage, PostgreSQL}}{June 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application that allows users to interact and explore new music as well as upload their own music.}
+            \resumeItem{The backend was created with Ruby on Rails and PostgreSQL, while the frontend was made with React.}
+            \resumeItem{Integrated Active Storage in Ruby on Rails to handle MP3 and image file uploads, providing users with the ability to upload and manage files securely.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Locali} $|$ \emph{JavaScript, React, Ruby on Rails, PostgreSQL}}{May 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application that allows users to explore and create events.}
+            \resumeItem{The backend was created with Ruby on Rails and PostgreSQL, while the frontend was made with React.}
+            \resumeItem{Utilized Fast JSON API gem in the Rails backend to serialize data efficiently and optimize data transfer between server and client.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI Chatbot} $|$ \emph{IBM Watson, Natural Language Processing}}{September 2018 - December 2018}
+          \resumeItemListStart
+            \resumeItem{Collaborated with classmates to design and develop an AI-powered self-service solution for Hudson County Community College}
+            \resumeItem{Utilized IBM Watson to create a natural language processing (NLP) system that provided students with personalized assistance and support}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, JavaScript, HTML/CSS, SQL} \\
+     \textbf{Frameworks}{: React, Node.js, Express.js, Ruby on Rails} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Visual Studio, IntelliJ} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, ActiveStorage}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
