@@ -2,4 +2,4 @@
 
 LaTeX template for my personal resume.
 
-![Resume Preview](Resume.pdf)
+![Resume Preview](Resume.jpg)
